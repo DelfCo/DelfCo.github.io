@@ -1,2 +1,4 @@
 name: Delf's test Pages page
 markdown: kramdown
+
+theme: jekyll-theme-cayman
