@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{{ page.title }}</title>
-	    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    </head>
-    <body>
-        <nav>
-    	    <ul>
-        	<li><a href="/">Home</a></li>
-	        <li><a href="/about">About</a></li>
-        	<li><a href="/cv">CV</a></li>
-        	<li><a href="/blog">Blog</a></li>
-    	    </ul>
-	  </nav>
-    
-    {{ content }}
-	
-	<footer>
-    	    <ul>
-        	<li><a href="mailto:delf@drizzle.com">email</a></li>
-        	<li><a href="https://github.com/DelfCo">github.com/DelfCo</a></li>
-            </ul>
-        </footer>
+{% include header.html %}
 
-  </body>
+<body>
+	<nav>
+		<ul>
+			<li>
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+		</ul>
+	</nav>
+
+	{{ content }} {% include footer.html %}
+
+</body>
