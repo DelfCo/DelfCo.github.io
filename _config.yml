@@ -6,9 +6,6 @@ safe: true
 exclude: [ "README.md", "CNAME" ]
 TZ: "America/Los_Angeles"
 
-destination: ./_site/haystack
-baseurl: "/haystack"
-
 collections_dir: ./src
 collections:
   src:
