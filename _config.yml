@@ -6,8 +6,4 @@ safe: true
 exclude: [ "README.md", "CNAME" ]
 TZ: "America/Los_Angeles"
 
-collections_dir: ./src
-collections:
-  src:
-    output: true
 

@@ -75,13 +75,13 @@ nav ul, footer ul {
 
 
 h1 {
-    font-size: 10vw;
+    font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 p {
-    font-size: 10vw;
-    line-height: 12vw;
+    font-size: 1em;
+    line-height: 1.2em;
     color: black;
 }
 
