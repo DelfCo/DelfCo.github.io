@@ -30,10 +30,7 @@ nav ul, footer ul {
     font-weight: bold;
 }
 
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
+
 
 @media screen and (min-width: 800px) {
     .bannerpic a {
@@ -48,6 +45,10 @@ nav ul li, footer ul li {
         line-height: 1.2em;
         font-size: 1em;
     }
+    nav ul li, footer ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
 }
 @media screen and (max-width:800px) {
     .bannerpic a {
@@ -59,6 +60,10 @@ nav ul li, footer ul li {
         list-style: none;
         line-height: 12vw;
         font-size: 10vw;
+    }
+    nav ul li, footer ul li {
+        display: inline-block;
+        margin-right: 20px;
     }
 }
 
