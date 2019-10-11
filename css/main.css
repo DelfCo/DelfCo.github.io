@@ -1,70 +1,42 @@
 body {
-    width: 90vw;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    width: 50vw;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    max-width: 50rem;
 }
 
 nav {
     background-color: #73AD21;
     color: lightgray;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+}
 
+.links li {
+    list-style: none;
+    line-height: 1.2em;
+    font-size: 1em;
 }
 
 footer {
     background-color: yellowgreen;
     color: lightgray;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
-nav a, footer a {
+nav a,
+footer a {
     color: white;
 }
 
-nav a:hover, footer a:hover {
+nav a:hover,
+footer a:hover {
     color: black;
 }
 
-nav ul, footer ul {
+nav ul,
+footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
-}
-
-
-
-@media screen and (min-width: 800px) {
-    .bannerpic a {
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: 3px solid yellowgreen;
-        background-color: paleturquoise;
-    }
-    .links li {
-        list-style: none;
-        line-height: 1.2em;
-        font-size: 1em;
-    }
-    nav ul li, footer ul li {
-        display: inline-block;
-        margin-right: 20px;
-    }
-}
-@media screen and (max-width:800px) {
-    .bannerpic a {
-        position: relative;
-        border: 3px solid yellowgreen;
-        background-color: paleturquoise;
-    }
-    .links li {
-        list-style: none;
-        line-height: 12vw;
-        font-size: 10vw;
-    }
-    nav ul li, footer ul li {
-        display: inline-block;
-        margin-right: 20px;
-    }
 }
 
 .links {
@@ -73,10 +45,9 @@ nav ul, footer ul {
     height: 100%;
 }
 
-
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 p {
@@ -85,4 +56,34 @@ p {
     color: black;
 }
 
+@media screen and (min-width: 600px) {
+    .bannerpic a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 3px solid yellowgreen;
+        background-color: paleturquoise;
+    }
+    nav ul li,
+    footer ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
 
+@media screen and (max-width:600px) {
+    .bannerpic a {
+        position: relative;
+        border: 3px solid yellowgreen;
+        background-color: paleturquoise;
+    }
+    body {
+        width: 100%;
+        max-width: 100%;
+    }
+    nav ul li,
+    footer ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
