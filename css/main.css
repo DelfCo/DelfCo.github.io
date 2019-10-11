@@ -5,19 +5,13 @@ body {
 }
 
 nav {
-    background-color: #73AD21;
+    background-color: rgb(33, 117, 109);
     color: lightgray;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
-.links li {
-    list-style: none;
-    line-height: 1.2em;
-    font-size: 1em;
-}
-
 footer {
-    background-color: yellowgreen;
+    background-color: rgb(33, 117, 109);
     color: lightgray;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -56,34 +50,44 @@ p {
     color: black;
 }
 
+.links li {
+    list-style: none;
+    line-height: 1.2em;
+    font-size: 1em;
+}
+
+nav ul li,
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.bannerpic a {
+    border: 3px solid rgb(33, 117, 109);
+    background-color: paleturquoise;
+}
+
 @media screen and (min-width: 600px) {
+    /* monitor */
     .bannerpic a {
         position: absolute;
         top: 0;
         right: 0;
-        border: 3px solid yellowgreen;
-        background-color: paleturquoise;
-    }
-    nav ul li,
-    footer ul li {
-        display: inline-block;
-        margin-right: 20px;
     }
 }
 
 @media screen and (max-width:600px) {
-    .bannerpic a {
-        position: relative;
-        border: 3px solid yellowgreen;
-        background-color: paleturquoise;
-    }
+    /* mobile/skinny screen */
     body {
         width: 100%;
         max-width: 100%;
     }
-    nav ul li,
-    footer ul li {
-        display: inline-block;
-        margin-right: 20px;
+    .bannerpic a {
+        position: relative;
+    }
+    .links li {
+        list-style: none;
+        line-height: 1.5em;
+        font-size: 1.25em;
     }
 }
