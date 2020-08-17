@@ -1,29 +1,37 @@
+:root {
+    --header-bg: rgb(33, 117, 109);
+    --header-text: white;
+    --header-hover-text: black;
+    --body-bg: white;
+}
+
 body {
     width: 50vw;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     max-width: 50rem;
+    background-color: var(--body-bg);
 }
 
 nav {
-    background-color: rgb(33, 117, 109);
-    color: lightgray;
+    background-color: var(--header-bg);
+    color: var(--header-text);
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 footer {
-    background-color: rgb(33, 117, 109);
-    color: lightgray;
+    background-color: var(--header-bg);
+    color: var(--header-text);
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 nav a,
 footer a {
-    color: white;
+    color: var(--header-text);
 }
 
 nav a:hover,
 footer a:hover {
-    color: black;
+    color: var(--header-hover-text);
 }
 
 nav ul,
@@ -62,18 +70,9 @@ footer ul li {
     margin-right: 20px;
 }
 
-.bannerpic a {
-    border: 3px solid rgb(33, 117, 109);
-    background-color: paleturquoise;
-}
 
 @media screen and (min-width: 600px) {
     /* monitor */
-    .bannerpic a {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
 }
 
 @media screen and (max-width:600px) {
@@ -81,9 +80,6 @@ footer ul li {
     body {
         width: 100%;
         max-width: 100%;
-    }
-    .bannerpic a {
-        position: relative;
     }
     .links li {
         list-style: none;
