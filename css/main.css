@@ -87,3 +87,9 @@ footer ul li {
         font-size: 1.25em;
     }
 }
+
+@supports (font-size: clamp(23ch, 5vw, 46ch)) {
+    body {
+      font-size: clamp(12px, 5vw, 32px);
+    }
+}
