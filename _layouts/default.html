@@ -3,7 +3,9 @@
 {% include header.html %}
 
 <body>
-    <nav>
+    <header role="banner">{{page.title}}</header>
+
+    <nav role="nav">
         <ul>
             <li>
                 <a href="/">Home</a>
@@ -14,6 +16,9 @@
         </ul>
     </nav>
 
-    {{ content }} {% include footer.html %}
+    <main role="main">
+        {{ content }} 
+    </main>
 
+    {% include footer.html %}
 </body>
