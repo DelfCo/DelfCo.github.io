@@ -48,7 +48,7 @@ footer ul {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 1em;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
@@ -60,7 +60,7 @@ p {
 
 .links li {
     list-style: none;
-    line-height: 1.2em;
+    line-height: 1.3em;
     font-size: 1em;
 }
 
